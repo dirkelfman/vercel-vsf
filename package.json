@@ -26,6 +26,7 @@
     "@nuxt/core": "^2.15.7",
     "@nuxtjs/vercel-builder": "^0.22.1",
     "cookie-universal-nuxt": "^2.1.5",
+    "esm": "^3.2.25",
     "nuxt-i18n": "^6.5.0"
   },
   "devDependencies": {
