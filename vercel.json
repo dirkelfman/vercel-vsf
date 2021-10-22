@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "nuxt.config.js",
+            "use": "@nuxtjs/vercel-builder",
+            "config": {
+              "includeFiles": [
+                "middleware.config.js",
+                "themeConfig.js",
+                "config/dev.json"
+              ]
+            }
+          }
+      ]
+  }

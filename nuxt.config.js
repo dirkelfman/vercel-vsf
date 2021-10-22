@@ -147,6 +147,14 @@ export default {
         path: '/p/:id',
         component: resolve(__dirname, 'pages/Product.vue')
       });
+      routes.push( {
+        "src": "/sw.js",
+        "continue": true,
+        "headers": {
+          "Cache-Control": "public, max-age=0, must-revalidate",
+          "Service-Worker-Allowed": "/"
+        }
+      })
     },
     middleware: ['checkout'],
     scrollBehavior (_to, _from, savedPosition) {
